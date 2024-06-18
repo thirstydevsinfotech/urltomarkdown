@@ -6,6 +6,7 @@ const rateLimit = require('express-rate-limit');
 const JSDOM = require('jsdom').JSDOM;
 const port = process.env.PORT;
 const app = express();
+export const maxDuration = 300;
 
 const rateLimiter = rateLimit({
 	windowMs: 30 * 1000,
