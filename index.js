@@ -29,7 +29,7 @@ function send_headers(res) {
 }
 
 function read_url(url, res, inline_title, ignore_links) {
-		reader = readers.reader_for_url(url);
+		var reader = readers.reader_for_url(url);
 		send_headers(res);
 		reader.read_url(url, res, inline_title, ignore_links);	
 }
