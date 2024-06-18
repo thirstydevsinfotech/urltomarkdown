@@ -15,7 +15,7 @@ const rateLimiter = rateLimit({
 	headers: true
 });
 
-app.use(rateLimiter);
+// app.use(rateLimiter);
 
 app.use(express.urlencoded({
   extended: true,
