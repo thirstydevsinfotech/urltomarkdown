@@ -10,7 +10,7 @@ export const maxDuration = 300;
 
 const rateLimiter = rateLimit({
 	windowMs: 30 * 1000,
-	max: 5,
+	max: 10,
 	message: 'Rate limit exceeded',
 	headers: true
 });
